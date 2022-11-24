@@ -1,0 +1,87 @@
+/* O asterisco significa que literalmente TODOS os elementos da página vão receber as seguintes propriedes.
+
+   Ao começar um estilização css, sempre coloca "margin: 0" e "padding: 0" na tag de todos os elementos (*)
+   pra não ter um espaçamento automático.
+
+   padding: é o espaçamento do conteúdo dentro de um elemento e os "limites de tamanho desse elemento" desse elemento  
+            (Quanto maior o padding, maior o distante o conteúdo vai ficar das "bordas" do elemento.
+   
+   margin: é o espaçamento de margem que um elemento em relação a outro elemento
+            (Quanto maior o margin, maior a distância que ele vai ter em relação a outro elemento.
+
+   font-family: define a fonte que a aplicação vai usar. (normalmente é usada no body)
+
+   color: define a cor que a fonte vai ter.
+
+   background-color: define a cor de fundo do elemento.
+
+   height: define a altura do elemento.
+
+   width: define a largura.
+*/
+
+
+/* Estilos gerais */
+*{ 
+    margin: 0; 
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*div que está "englobando" todo o conteúdo do header (cabeçalho)*/
+.container{ 
+    padding: 70px 0; 
+}
+
+/*Paragrafos e listas*/
+p, li{
+    color: #fff
+}
+
+/* Barra de navegação */
+header, .navbar{
+    background-color: #0095ff;
+}
+
+/*div que está "englobando" todo o conteúdo do menu*/
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Imagem do Menu */
+#logo{
+    width: 75px;
+}
+
+/* Link que "engloba" a logo do menu */
+.navbar-brand{
+    padding: 0;
+    color: #fff;
+}
+
+/* efeito de passar o mouse por cima na logo do menu*/
+.navbar-brand:hover{
+    color: red;
+}
+
+/* Links do menu */
+#navbar-links a{
+    color: #fff;
+}
+
+/* espaçamento do menu, conteúdo da parte direita do menu e os links do menu */
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 1rem .8rem;
+}
+
+/* Remover o padding pra não criar o espaçamento entre o conteúdo e o elemento que "engloba" o conteúdo 
+   O padding .5rem era só pra testar
+*/
+.elementos{
+    margin: 0;
+    padding: 10rem;
+}

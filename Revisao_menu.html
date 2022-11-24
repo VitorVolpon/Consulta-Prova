@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Churuspangos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="Revisao_menu.css">
+  </head>
+  <body>
+    <header>
+      <!--A classe container ajusta o tamanho do conteúdo para um tamanho específico da  tela -->
+      <div class="container" id="nav-container"> 
+
+        <!--nav é onde você vai colocar os elementos do menu como img, links, buttons... -->
+        <nav class="navbar navbar-expand-lg fixed-top"> 
+          <!-- A tag de link(a) está "englobando" a img para fazer a logo virar um link -->
+          <a href="#" class="navbar-brand">
+            <!-- A img dentro do link (a) é a Logo do site -->
+            <img src="/logo-homepage.png" id="logo" alt="Logo do site"> Nome da empresa 
+          </a>
+
+          <!-- Botão hamburger(botão de menu mobile) que só aparece quando a tela fica pequena (não precisa saber todas essas propriedades, só o class e o resto é ctrl + c e ctrl + v fds) -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-lagel="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+         
+          <!-- Conteúdo da parte direita do menu -->
+           <!-- 
+               navbar-collapse: serve para agrupar e esconder conteúdos navbar, de acordo com o breakpoint do pai.
+               justify-content-end: faz com o elemento fique alinhado no final("parte direita" ou "end") dentro do elemento que ele está
+          -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbar-links"> 
+            <div class="navbar-nav">
+              <a href="#" class="nav-item nav-link" id="home-menu">Home</a>
+              <a href="#" class="nav-item nav-link" id="about-menu">Sobre nós</a>
+              <a href="#" class="nav-item nav-link" id="services-menu">Serviços</a>
+              <a href="#" class="nav-item nav-link" id="team-menu">Time</a>
+              <a href="#" class="nav-item nav-link" id="contact-menu">Contato</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Div que separa o conteúdo de cada parte da página que o prof quer, se precisar de mais conteúdos, é só dar ctrl + c e ctrl + v -->
+    <div class="Conteudo-1">
+      <!-- Div que define a largura a página (fluid define a largura do elemento com o da tela, não coloca nenhuma margin nos elementos) -->
+      <div class="container-fluid">
+        <!-- Conteúdo -->
+        <!-- div class = "row" Deixa as coisas alinhas, caso não tenha espaço suficiente pro conteúdo, a linha quebra e o conteúdo que não coube desce -->
+        <div class="row">
+          <div class="elementos col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bg-danger">
+            Primeira caixa
+          </div>
+          <div class="elementos col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 bg-primary">
+            Segunda caixa
+          </div>
+          <div class="elementos col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 bg-success">
+            Terceira caixa
+          </div>
+          <div class="elementos col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 bg-warning">
+            Quarta caixa
+          </div>
+          <div class="elementos col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 bg-danger">
+            Quinta caixa
+          </div>
+          <div class="elementos col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 bg-primary">
+            Sexta caixa
+          </div>
+          <div class="elementos col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-success">
+            Sétima caixa
+          </div>
+          <div class="elementos col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 bg-warning">
+            Oitava caixa
+          </div>
+          <div class="elementos col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-danger">
+            Nona caixa
+          </div>
+          <div class="elementos col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 bg-primary">
+            Décima caixa
+          </div>
+          <div class="elementos col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 bg-success">
+            Décima primeira caixa
+          </div>
+          <div class="elementos col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 bg-warning">
+            Décima segunda caixa
+          </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
